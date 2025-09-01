@@ -1,0 +1,23 @@
+<odoo>
+  <data>
+  <record id="module_category_hgp_users" model="ir.module.category">
+    <field name="name">Parental App Roles</field>
+    <field name="sequence">10</field>
+</record>
+
+    <record id="group_admin" model="res.groups">
+        <field name="name">Admin</field>
+        <field name="category_id" ref="library.module_category_hgp_users"/>
+    </record>
+    <record id="group_staff" model="res.groups">
+        <field name="name">Staff</field>
+        <field name="category_id" ref="library.module_category_hgp_users"/>
+    </record>
+    <record id="group_student" model="res.groups">
+        <field name="name">Student</field>
+        <field name="category_id" ref="library.module_category_hgp_users"/>
+    </record>
+
+  </data>
+</odoo>
+

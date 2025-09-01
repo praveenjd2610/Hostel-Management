@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Odoo",
+            "type": "shell",
+            "command": "docker-compose up",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "wsl.exe"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Restart Odoo",
+
+            "type": "shell", 
+            "command": "docker-compose restart",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "wsl.exe"
+                }
+            }
+        },
+        {
+            "label": "Stop Odoo",
+            "type": "shell",
+            "command": "docker-compose down",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "wsl.exe"
+                }
+            }
+        }
+    ]
+}
